@@ -42,14 +42,6 @@ $current_page = basename($_SERVER['PHP_SELF']);
                         <i class="bi bi-ticket-detailed me-1"></i> Chamados
                     </a>
                 </li>
-                <?php if(isset($_SESSION['nivel']) && $_SESSION['nivel'] >= 2): ?>
-                <li class="nav-item">
-                    <a class="nav-link <?php echo $current_page == 'log.php' ? 'active fw-bold' : ''; ?>"
-                        href="log.php">
-                        <i class="bi bi-list-check me-1"></i> Logs
-                    </a>
-                </li>
-                <?php endif; ?>
             </ul>
             <ul class="navbar-nav">
                 <li class="nav-item dropdown">
